@@ -28,9 +28,22 @@
 </Router>
 
 <style global>
-    body {
-        font-family: 'Rubik', sans-serif;
-    }
+@font-face { 
+  font-family: 'NeueHaas';
+  src: url('src/icons/NeueHaasDisplay-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'NeueHaas';
+  src: url('src/icons/NeueHaasDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+body { 
+    font-family: "NeueHaas", sans-serif !important;
+}
     ::-webkit-scrollbar {
         width: 0px;
         display: none;
