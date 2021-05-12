@@ -2,7 +2,7 @@
     import { Router, Link, Route } from "svelte-routing";
     import Tailwind from "./Tailwind.svelte";
     import Header from "./components/headers/Header.svelte";
-    import HeaderTop from "./components/HeaderTop.svelte";
+    import HeaderTop from "./components/headers/HeaderTop.svelte";
     import Footer from "./components/Footer.svelte";
 
     import Home from "./routes/Home.svelte";
@@ -12,7 +12,7 @@
 </script>
 
 <Tailwind />
-<Router {url}>
+<Router url="{url}">
     <Header />
     <HeaderTop />
     <div>
