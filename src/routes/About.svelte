@@ -1,10 +1,9 @@
 <script>
-    let pageName="About";
-    import AboutHero from "../components/AboutHero.svelte";
+    import AboutMain from "../components/AboutMain.svelte";
 </script>
 
 <main>
-    <AboutHero />
+    <AboutMain />
 </main>
 
 <style>

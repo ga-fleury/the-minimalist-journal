@@ -1,11 +1,11 @@
 <main>
     <!-- left to right wrap -->
-    <div class="flex items-end transform hover:scale-105 duration-150 cursor-pointer">
+    <div class="flex items-end transform hover:scale-105 duration-300 cursor-pointer">
         <p class="py-12 transform -rotate-90 text-2xl font-bold absolute -mx-14">10860</p>
         <!-- mid-section wrap -->
         <div class="flex flex-col items-between w-full">
             <div class="flex items-center justify-end">
-                <span class="material-icons md-36">north_east</span>
+                <span class="material-icons md-24">north_east</span>
                 <p class="inline text-2xl font-bold">São Paulo</p>
             </div>
             <!-- border -->

@@ -1,7 +1,9 @@
 <script lang="ts">
     import { Router, Link, Route } from "svelte-routing";
     import Tailwind from "./Tailwind.svelte";
-    import Header from "./components/Header.svelte";
+    import Header from "./components/headers/Header.svelte";
+    import HeaderTop from "./components/HeaderTop.svelte";
+    import Footer from "./components/Footer.svelte";
 
     import Home from "./routes/Home.svelte";
     import About from "./routes/About.svelte";
@@ -10,10 +12,11 @@
 </script>
 
 <Tailwind />
-<Router url="{url}">
+<Router {url}>
     <Header />
+    <HeaderTop />
     <div>
-        <Route path="how-it-works"> <About /> </Route>
+        <Route path="how-it-works"><About /></Route>
         <!--for now the router just support case sensitive,
            one workaround colud be add two time the route
            Example.
@@ -21,7 +24,24 @@
        -->
         <Route path="/"><Home /></Route>
     </div>
+    <Footer />
 </Router>
 
-<style>
+<style global>
+    ::-webkit-scrollbar {
+        width: 0px;
+        display: none;
+    }
+    .material-icons.md-18 {
+        font-size: 18px;
+    }
+    .material-icons.md-24 {
+        font-size: 24px;
+    }
+    .material-icons.md-36 {
+        font-size: 36px;
+    }
+    .material-icons.md-48 {
+        font-size: 48px;
+    }
 </style>
