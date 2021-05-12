@@ -2,7 +2,7 @@
 
 This is a project for a minimalist journaling system online. The site is inspired by [Notion](https://www.notion.so/) and Are.na in its minimalist aesthetic coupled with good UX
 
-![habits that stick. track your goals](img\hero.png?raw=true "minimalist journal LP")
+![habits that stick. track your goals](img/hero.png?raw=true "minimalist journal LP")
 
 ## Status
 
