@@ -99,25 +99,5 @@ export default [
         watch: {
             clearScreen: false,
         },
-    },
-	{
-		input: "src/App.svelte",
-		output: {
-		  exports: "default",
-		  sourcemap: false,
-		  format: "cjs",
-		  name: "app",
-		  file: "public/App.js"
-		},
-		plugins: [
-		  svelte({
-			compilerOptions: {
-			  generate: "ssr"
-			}
-		  }),
-		  resolve(),
-		  commonjs(),
-		  !production && terser()
-		]
-	  }
+    }
 ];
