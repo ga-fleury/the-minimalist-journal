@@ -10,10 +10,10 @@
 </script>
 
 <Tailwind />
-<Router {url}>
+<Router url="{url}">
     <Header />
     <div>
-        <Route path="about" component={About} />
+        <Route path="how-it-works"> <About /> </Route>
         <!--for now the router just support case sensitive,
            one workaround colud be add two time the route
            Example.

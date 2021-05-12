@@ -14,7 +14,7 @@
             </div>
         </Link>
         <div>
-            <Link to="about">
+            <Link to="how-it-works">
                 <p class="text-lg inline pr-4">How it works</p>
             </Link>
             <button
