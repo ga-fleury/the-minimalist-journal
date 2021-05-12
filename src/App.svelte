@@ -29,20 +29,20 @@
 
 <style global>
 @font-face { 
-  font-family: 'Neue Haas';
-  src: url('src/icons/NeueHaasDisplay-Roman.ttf') format('truetype');
+  font-family: 'NeueHaas';
+  src: url('src/icons/NeueHaasDisplay-Roman.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face { 
-  font-family: 'Neue Haas';
-  src: url('src/icons/NeueHaasDisplay-Bold.ttf') format('truetype');
+  font-family: 'NeueHaas';
+  src: url('src/icons/NeueHaasDisplay-Bold.woff') format('woff');
   font-weight: bold;
   font-style: bold;
 }
 
 body { 
-    font-family: "Neue Haas", sans-serif;
+    font-family: "NeueHaas", sans-serif;
 }
     ::-webkit-scrollbar {
         width: 0px;
