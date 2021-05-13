@@ -33,12 +33,14 @@
   src: url('src/icons/NeueHaasDisplay-Roman.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face { 
   font-family: 'NeueHaas';
   src: url('src/icons/NeueHaasDisplay-Bold.woff') format('woff');
   font-weight: bold;
   font-style: bold;
+  font-display: swap;
 }
 
 body { 

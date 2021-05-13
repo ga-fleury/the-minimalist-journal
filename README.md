@@ -7,3 +7,13 @@ This is a project for a minimalist journaling system online. The site is inspire
 ## Status
 
 The project is yet in it's initial stages. I'm currently workin on the main website, and I might add a blog to log the progress as well as gather material for a possible product hunt/kickstarter campaign.
+
+### TODO:
+
+- [ ] Fix responsiveness
+- [ ] use icons locally instead of material icons font
+- [ ] Make the About page animations explaning everything
+- [ ] Google login
+- [ ] User dashboard adding cards
+- [ ] edit card logic (expanding cards and defining trackers)
+- [ ] v1.0
