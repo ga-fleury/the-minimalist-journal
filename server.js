@@ -1,12 +1,6 @@
 const { createServer } = require("http");
 const app = require("./dist/App.js");
 
-app.use(express.static('public'))
-
-app.get('*', (req, res) => {
-  res.sendFile(__dirname + "/public/index.html")
-})
-
 createServer((req, res) => {
   const { html } = app.render({ url: req.url });
 
