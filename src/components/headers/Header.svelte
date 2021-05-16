@@ -46,21 +46,18 @@
             } else {
                 // upscroll code
                 lax.removeElements("#headerHide");
-                lax.addElements(
-                    "#headerHide",
-                    {
-                        scrollY: {
-                            translateY: [
-                                [0, 68],
-                                [-60, 0],
-                            ],
-                            opacity: [
-                                [0, 69, 70],
-                                [0, 0, 1],
-                            ],
-                        },
+                lax.addElements("#headerHide", {
+                    scrollY: {
+                        translateY: [
+                            [0, 68],
+                            [-60, 0],
+                        ],
+                        opacity: [
+                            [0, 69, 70],
+                            [0, 0, 1],
+                        ],
                     },
-                );
+                });
             }
             lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
         },
@@ -68,28 +65,26 @@
     );
 </script>
 
-<main>
-    <div class="fixed w-full duration-300 bg-white" id="headerHide">
-        <header
-            class="container mx-auto my-4 h-16 flex items-center justify-between"
-        >
-            <Link to="/">
-                <div class="">
-                    <p class="text-xl sm:text-3xl font-bold">
-                        the minimalist journal
-                    </p>
-                </div>
-            </Link>
-            <div>
-                <Link to="how-it-works">
-                    <p class="text-lg inline pr-4">How it works</p>
-                </Link>
-                <button
-                    class="bg-transparent hover:bg-black text-gray-700 font-bold hover:text-white py-1 px-6 border-2 border-gray-500 hover:border-transparent rounded duration-300"
-                >
-                    Login
-                </button>
+<div class="fixed w-full px-2 duration-300 bg-white" id="headerHide">
+    <header
+        class="container mx-auto my-4 h-16 flex items-center justify-between"
+    >
+        <Link to="/">
+            <div class="">
+                <p class="text-xl sm:text-3xl font-bold">
+                    the minimalist journal
+                </p>
             </div>
-        </header>
-    </div>
-</main>
+        </Link>
+        <div>
+            <Link to="how-it-works">
+                <p class="text-base sm:text-lg inline pr-4">How it works</p>
+            </Link>
+            <button
+                class="text-sm sm:text-base bg-transparent hover:bg-black text-gray-700 font-bold hover:text-white py-1 px-6 border-2 border-gray-500 hover:border-transparent rounded duration-300"
+            >
+                Login
+            </button>
+        </div>
+    </header>
+</div>

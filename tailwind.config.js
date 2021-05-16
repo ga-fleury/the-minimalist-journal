@@ -20,13 +20,16 @@ module.exports = {
             "2xl": "1440px",
             // => @media (min-width: 1536px) { ... }
         },
+        maxWidth: {
+            "98cent": "98%"
+        },
         height: {
             screenh: "90vh",
         },
         extend: {},
     },
     variants: {
-        extend: {}
+        extend: {},
     },
     plugins: [require("@tailwindcss/aspect-ratio")],
 };

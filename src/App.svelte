@@ -5,8 +5,10 @@
     import HeaderTop from "./components/headers/HeaderTop.svelte";
     import Footer from "./components/Footer.svelte";
 
+    // routes
     import Home from "./routes/Home.svelte";
     import About from "./routes/About.svelte";
+    import Dashboard from "./routes/Dashboard.svelte";
 
     export let url = "";
 </script>
@@ -17,12 +19,8 @@
     <HeaderTop />
     <div>
         <Route path="how-it-works"><About /></Route>
-        <!--for now the router just support case sensitive,
-           one workaround colud be add two time the route
-           Example.
-          <Route path="About" component="{About}" /> 
-       -->
         <Route path="/"><Home /></Route>
+        <Route path="dashboard"><Dashboard /></Route>
     </div>
     <Footer />
 </Router>
@@ -30,22 +28,30 @@
 <style global>
 @font-face { 
   font-family: 'NeueHaas';
-  src: url('src/icons/NeueHaasDisplay-Roman.woff') format('woff');
+  src: url('../fonts/NeueHaasDisplay-Roman.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face { 
   font-family: 'NeueHaas';
-  src: url('src/icons/NeueHaasDisplay-Bold.woff') format('woff');
+  src: url('../fonts/NeueHaasDisplay-Bold.woff') format('woff');
   font-weight: bold;
   font-style: bold;
   font-display: swap;
 }
+@font-face { 
+  font-family: 'NeueHaas';
+  src: url('../fonts/NeueHaasDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: medium;
+  font-display: swap;
+}
 
-body { 
+body {
     font-family: "NeueHaas", sans-serif !important;
 }
+
     ::-webkit-scrollbar {
         width: 0px;
         display: none;

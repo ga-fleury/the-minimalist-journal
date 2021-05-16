@@ -11,8 +11,11 @@ The project is yet in it's initial stages. I'm currently workin on the main webs
 ### TODO:
 
 - [ ] Fix responsiveness
+- [ ] Day Number calculator
 - [ ] use icons locally instead of material icons font
-- [ ] Make the About page animations explaning everything
+- [x] dashboard v1
+- [x] use fonts locally with swap
+- [ ] Make the About page animations explaining everything
 - [ ] Google login
 - [ ] User dashboard adding cards
 - [ ] edit card logic (expanding cards and defining trackers)
