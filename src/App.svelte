@@ -1,26 +1,24 @@
 <script lang="ts">
     import { Router, Link, Route } from "svelte-routing";
     import Tailwind from "./Tailwind.svelte";
-    import Header from "./components/headers/Header.svelte";
-    import HeaderTop from "./components/headers/HeaderTop.svelte";
     import Footer from "./components/Footer.svelte";
 
     // routes
     import Home from "./routes/Home.svelte";
     import About from "./routes/About.svelte";
     import Dashboard from "./routes/Dashboard.svelte";
+    import Blog from "./routes/Blog.svelte";
 
     export let url = "";
 </script>
 
 <Tailwind />
 <Router url="{url}">
-    <Header />
-    <HeaderTop />
     <div>
         <Route path="how-it-works"><About /></Route>
         <Route path="/"><Home /></Route>
         <Route path="dashboard"><Dashboard /></Route>
+        <Route path="blog"><Blog /></Route>
     </div>
     <Footer />
 </Router>

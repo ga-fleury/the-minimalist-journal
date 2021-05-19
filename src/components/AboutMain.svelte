@@ -43,8 +43,8 @@
                     class="flex items-center justify-end h-10 text-gray-400 duration-1000"
                     id="scrollWarning"
                 >
-                    <p class="inline">scroll to see more</p>
-                    <span class="material-icons md-18"> arrow_downward </span>
+                    <p class="inline pr-2">scroll down to see more</p>
+                    <span class="material-icons md-18 animate-bounce"> arrow_downward </span>
                 </div>
                 <h1 class="text-right text-6xl font-bold my-4">how it works</h1>
                 <p class="text-right text-3xl font-regular">

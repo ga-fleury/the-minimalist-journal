@@ -1,6 +1,8 @@
 <script>
     import JournalDaySmall from "../components/JournalDaySmall.svelte";
     import JournalNewDay from "../components/buttons/JournalNewDay.svelte";
+    import Header from "../components/headers/Header.svelte";
+    import HeaderTop from "../components/headers/HeaderTop.svelte";
 
     function addDay() {
         days.push({
@@ -70,6 +72,8 @@
     ];
 </script>
 
+<Header />
+<HeaderTop />
 <div class="p-20" />
 <div
     class="container mx-auto flex flex-wrap justify-items-between justify-start items-end"

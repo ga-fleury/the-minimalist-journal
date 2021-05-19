@@ -72,7 +72,7 @@
         <Link to="/">
             <div class="">
                 <p class="text-xl sm:text-3xl font-bold">
-                    the minimalist journal
+                    the minimalist journal <span class="font-normal">/ blog</span>
                 </p>
             </div>
         </Link>
