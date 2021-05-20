@@ -1,7 +1,6 @@
 <script lang="ts">
     import { Router, Link, Route } from "svelte-routing";
     import Tailwind from "./Tailwind.svelte";
-    import Footer from "./components/Footer.svelte";
 
     // routes
     import Home from "./routes/Home.svelte";
@@ -20,7 +19,6 @@
         <Route path="dashboard"><Dashboard /></Route>
         <Route path="blog"><Blog /></Route>
     </div>
-    <Footer />
 </Router>
 
 <style global>

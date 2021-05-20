@@ -20,8 +20,11 @@ module.exports = {
             "2xl": "1440px",
             // => @media (min-width: 1536px) { ... }
         },
+        minHeight: {
+            "95/100": "95vh"
+        },
         maxWidth: {
-            "98cent": "98%"
+            "98cent": "98%",
         },
         height: {
             screenh: "90vh",
