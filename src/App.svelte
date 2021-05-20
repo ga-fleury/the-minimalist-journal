@@ -11,6 +11,10 @@
     export let url = "";
 </script>
 
+<svelte:head>
+	<title>The Minimalist Journal</title>
+</svelte:head>
+
 <Tailwind />
 <Router url="{url}">
     <div>

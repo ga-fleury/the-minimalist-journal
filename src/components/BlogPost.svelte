@@ -1,4 +1,6 @@
 <script>
+    import { slide } from "svelte/transition";
+
     let isOpen = false;
     const toggle = () => (isOpen = !isOpen);
 
@@ -20,7 +22,7 @@
         </h1>
         
     {#if isOpen}
-        <div class="md:px-20 py-4 max-w-xs lg:w-7/12 text-xl">
+        <div transition:slide={{ duration: 200 }} class="md:px-20 py-4 max-w-xs lg:w-7/12 text-xl">
             {@html html}
         </div>
     {/if}

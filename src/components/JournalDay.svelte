@@ -6,22 +6,22 @@
         <div class="flex flex-col items-between w-full">
             <div class="flex items-center justify-end">
                 <span class="material-icons md-24">north_east</span>
-                <p class="inline text-2xl font-bold">São Paulo</p>
+                <span class="inline text-2xl font-bold">São Paulo</span>
             </div>
             <!-- border -->
             <div class="border-2 border-black aspect-w-1 aspect-h-1 w-full">
                 <!-- day text div -->
                 <div class="my-auto flex items-center justify-center">
-                    <p class="font-medium text-4xl my-auto mx-8 text-center">
+                    <span class="font-medium text-4xl my-auto mx-8 text-center">
                         started my minimalist journal
-                    </p>
+                    </span>
                 </div>
                 <!-- day text div end -->
             </div>
             <!-- border end -->
             <div class="flex items-center justify-between">
-                <p class="inline text-2xl font-bold">06:30</p>
-                <p class="inline text-2xl font-bold">11:00</p>
+                <span class="inline text-2xl font-bold">06:30</span>
+                <span class="inline text-2xl font-bold">11:00</span>
             </div>
         </div>
         <!-- mid-section wrap end -->

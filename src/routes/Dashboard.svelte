@@ -3,6 +3,7 @@
     import JournalNewDay from "../components/buttons/JournalNewDay.svelte";
     import Header from "../components/headers/Header.svelte";
     import HeaderTop from "../components/headers/HeaderTop.svelte";
+    import { fade } from "svelte/transition";
 
     function addDay() {
         days.push({
@@ -74,8 +75,8 @@
 
 <Header />
 <HeaderTop />
-<div class="p-20" />
 <div
+    in:fade
     class="container mx-auto flex flex-wrap justify-items-between justify-start items-end"
 >
     <div class="px-4 flex-none w-60 mb-7">

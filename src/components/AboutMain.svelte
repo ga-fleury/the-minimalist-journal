@@ -43,8 +43,10 @@
                     class="flex items-center justify-end h-10 text-gray-400 duration-1000"
                     id="scrollWarning"
                 >
-                    <p class="inline pr-2">scroll down to see more</p>
-                    <span class="material-icons md-18 animate-bounce"> arrow_downward </span>
+                    <span class="inline pr-2">scroll down to see more</span>
+                    <span class="material-icons md-18 animate-bounce">
+                        arrow_downward
+                    </span>
                 </div>
                 <h1 class="text-right text-6xl font-bold my-4">how it works</h1>
                 <p class="text-right text-3xl font-regular">
@@ -58,12 +60,12 @@
                     <div
                         class="flex items-end transform hover:scale-105 duration-150 cursor-pointer"
                     >
-                        <p
+                        <span
                             class="py-12 transform -rotate-90 text-2xl font-bold absolute -mx-14"
                             id="day-tag"
                         >
                             10860
-                        </p>
+                        </span>
                         <!-- mid-section wrap -->
                         <div class="flex flex-col items-between w-full">
                             <div
@@ -73,9 +75,9 @@
                                 <span class="material-icons md-24"
                                     >north_east</span
                                 >
-                                <p class="inline text-2xl font-bold">
+                                <span class="inline text-2xl font-bold">
                                     São Paulo
-                                </p>
+                                </span>
                             </div>
                             <!-- border -->
                             <div
@@ -86,29 +88,29 @@
                                 <div
                                     class="my-auto flex items-center justify-center"
                                 >
-                                    <p
+                                    <span
                                         class="font-bold text-4xl my-auto mx-8 text-center"
                                         id="text-tag"
                                     >
                                         started my minimalist journal
-                                    </p>
+                                    </span>
                                 </div>
                                 <!-- day text div end -->
                             </div>
                             <!-- border end -->
                             <div class="flex items-center justify-between">
-                                <p
+                                <span
                                     class="inline text-2xl font-semibold"
                                     id="wake-tag"
                                 >
                                     0630
-                                </p>
-                                <p
+                                </span>
+                                <span
                                     class="inline text-2xl font-semibold"
                                     id="sleep-tag"
                                 >
                                     1100
-                                </p>
+                                </span>
                             </div>
                         </div>
                         <!-- mid-section wrap end -->
@@ -123,6 +125,6 @@
 
 <style>
     .gigantic {
-        height: 5000px;
+        height: 5000px !important;
     }
 </style>

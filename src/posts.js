@@ -6,16 +6,11 @@ export const posts = _.chain(all)
     .orderBy("date", "desc")
     .value();
 
-export function findPost(permalink) {
-    return _.find(posts, { permalink });
-}
-
 export function findByTag(tag) {
     return posts.filter((post) => post.tags.includes(tag));
 }
 
 function transform({ filename, metadata, html }) {
-    const permalink = metadata.permalink || filename.replace(/.md$/, "");
     const date = new Date(metadata.date);
     let ye = new Intl.DateTimeFormat("en", { year: "numeric" }).format(date);
     let mo = new Intl.DateTimeFormat("en", { month: "short" }).format(date);
@@ -27,5 +22,5 @@ function transform({ filename, metadata, html }) {
         tags = metadata.tags.split(",").map((str) => str.trim());
     }
 
-    return { ...metadata, filename, permalink, html, date, finalDate, tags };
+    return { ...metadata, filename, html, date, finalDate, tags };
 }
