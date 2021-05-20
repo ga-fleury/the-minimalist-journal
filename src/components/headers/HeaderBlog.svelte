@@ -72,22 +72,20 @@
         <Link to="/">
             <div class="">
                 <p class="text-xl sm:text-3xl font-bold">
-                    the minimalist journal <span class="font-normal">&nbsp; / &nbsp; blog</span>
+                    min.journal <span class="font-normal"
+                        >&nbsp; / &nbsp; blog</span
+                    >
                 </p>
             </div>
         </Link>
         <div>
-            <Link to="blog">
-                <p class="text-base sm:text-lg inline pr-4">Blog</p>
+            <Link to="/">
+                <button
+                    class="text-sm sm:text-base bg-transparent hover:bg-black text-gray-700 font-bold hover:text-white py-1 px-6 border-2 border-gray-500 hover:border-transparent rounded duration-300"
+                >
+                    Back to site
+                </button>
             </Link>
-            <Link to="how-it-works">
-                <p class="text-base sm:text-lg inline pr-4">How it works</p>
-            </Link>
-            <button
-                class="text-sm sm:text-base bg-transparent hover:bg-black text-gray-700 font-bold hover:text-white py-1 px-6 border-2 border-gray-500 hover:border-transparent rounded duration-300"
-            >
-                Login
-            </button>
         </div>
     </header>
 </div>

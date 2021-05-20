@@ -26,6 +26,6 @@ function transform({ filename, metadata, html }) {
     if (metadata.tags) {
         tags = metadata.tags.split(",").map((str) => str.trim());
     }
-    console.log("working");
+
     return { ...metadata, filename, permalink, html, date, finalDate, tags };
 }
