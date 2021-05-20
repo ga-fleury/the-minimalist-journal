@@ -14,6 +14,8 @@ The project is yet in it's initial stages. I'm currently workin on the main webs
 - [ ] Fix responsiveness (About)
 - [ ] Day Number calculator
 - [ ] use icons locally instead of material icons font
+- [x] make a blog
+- [ ] fix blog markdown styling
 - [x] dashboard v1
 - [x] use fonts locally with swap
 - [ ] custom trackers

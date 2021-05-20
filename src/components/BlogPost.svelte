@@ -1,0 +1,30 @@
+<script>
+    let isOpen = false;
+    const toggle = () => (isOpen = !isOpen);
+
+    export let title;
+	export let date;
+	export let html;
+</script>
+
+<article>
+    <!-- link article to /posts/$permalink -->
+    <h1
+        on:click={toggle}
+        aria-expanded={isOpen}
+        class="text-3xl md:text-3xl font-bold mt-0 mb-4 cursor-pointer"
+    >
+        {title}<span class="font-normal"
+            >&nbsp; / &nbsp;{date}</span
+        >
+    </h1>
+
+    {#if isOpen}
+        <div class="px-20 py-4">
+            {@html html}
+        </div>
+    {/if}
+</article>
+
+<style>
+</style>
