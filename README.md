@@ -11,17 +11,19 @@ The project is yet in it's initial stages. I'm currently workin on the main webs
 ### TODO:
 
 - [x] Fix responsiveness (Home)
-- [ ] Fix responsiveness (About)
 - [ ] Day Number calculator
 - [ ] use icons locally instead of material icons font
 - [x] make a blog
-- [ ] fix blog markdown styling
+- [x] fix blog markdown styling
 - [x] dashboard v1
 - [x] use fonts locally with swap
+- [ ] save days to local storage
+- [ ] implement database
 - [ ] custom trackers
 - [ ] monthly separator (?)
-- [ ] Make the About page animations explaining everything
+- [ ] merge about page and homepage (minimalism am i right?)
 - [ ] Google login
-- [ ] User dashboard adding cards
-- [ ] edit card logic (expanding cards and defining trackers)
+- [x] User dashboard adding cards
+- [x] User dashboard deleting cards
+- [ ] User dashboard editing information in cards
 - [ ] v1.0

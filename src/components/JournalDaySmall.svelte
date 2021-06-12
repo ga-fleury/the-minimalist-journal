@@ -9,7 +9,7 @@
 
 <!-- left to right wrap -->
 <div class="flex items-end transform duration-300 cursor-pointer">
-    <p class="py-10 transform -rotate-90 text-xl font-bold absolute -mx-10">
+    <p class="-translate-y-12 translate-x-2 transform -rotate-90 text-xl font-bold absolute -mx-10">
         {dayNumber}
     </p>
     <!-- mid-section wrap -->
@@ -18,7 +18,7 @@
         {#if didTravel}
             <div class="flex items-center justify-end">
                 <span class="material-icons md-24">north_east</span>
-                <p class="inline text-lg font-bold">{destination}</p>
+                <p class="inline text-lg font-bold pb-0">{destination}</p>
             </div>
         {/if}
         <!-- travel section end -->
