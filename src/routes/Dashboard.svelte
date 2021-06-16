@@ -112,7 +112,7 @@
 <HeaderTop />
 <div
     in:fade
-    class="container mx-auto flex flex-wrap justify-items-between justify-start items-end pt-48"
+    class="container mx-auto flex flex-wrap justify-items-around justify-start items-end pt-48"
 >
     <div on:click={addDay} class="px-4 flex-none w-60 mb-11">
         <JournalNewDay />

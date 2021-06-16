@@ -2778,6 +2778,11 @@ svelte-check@^1.0.0:
     svelte-preprocess "^4.0.0"
     typescript "*"
 
+svelte-inline-edit@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/svelte-inline-edit/-/svelte-inline-edit-1.0.3.tgz#78462a0b42ccded71673c68c8b3a98e26d0bf8d3"
+  integrity sha512-cPy4lzOV0xwpvZBKMwS/OlJ0WVh0iPRBeoR4GRGY/9tiq5/1gtCvh+Ddc7CYsavwlH4BfV1HHzglZtepNClzyw==
+
 svelte-preprocess@^4.0.0:
   version "4.7.3"
   resolved "https://registry.npmjs.org/svelte-preprocess/-/svelte-preprocess-4.7.3.tgz"

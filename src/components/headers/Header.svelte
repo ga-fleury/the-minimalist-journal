@@ -71,12 +71,12 @@
     >
         <Link to="/">
             <div class="">
-                <p class="text-xl sm:text-3xl font-bold">
+                <p class="text-xl sm:text-3xl font-bold pl-4">
                     the minimalist journal
                 </p>
             </div>
         </Link>
-        <div>
+        <div class="pr-4">
             <Link to="blog">
                 <p class="text-base sm:text-lg inline pr-4">Blog</p>
             </Link>

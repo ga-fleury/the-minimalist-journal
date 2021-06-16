@@ -6,51 +6,57 @@
     import Home from "./routes/Home.svelte";
     import About from "./routes/About.svelte";
     import Dashboard from "./routes/Dashboard.svelte";
+    import Dashboard2 from "./routes/Dashboard2.svelte";
     import Blog from "./routes/Blog.svelte";
 
     export let url = "";
 </script>
 
 <svelte:head>
-	<title>The Minimalist Journal</title>
+    <title>The Minimalist Journal</title>
 </svelte:head>
 
 <Tailwind />
-<Router url="{url}">
+<Router {url}>
     <div>
         <Route path="how-it-works"><About /></Route>
         <Route path="/"><Home /></Route>
+        <Route path="dashboard2"><Dashboard2 /></Route>
         <Route path="dashboard"><Dashboard /></Route>
         <Route path="blog"><Blog /></Route>
     </div>
 </Router>
 
 <style global>
-@font-face { 
-  font-family: 'NeueHaas';
-  src: url('../fonts/NeueHaasDisplay-Roman.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face { 
-  font-family: 'NeueHaas';
-  src: url('../fonts/NeueHaasDisplay-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: bold;
-  font-display: swap;
-}
-@font-face { 
-  font-family: 'NeueHaas';
-  src: url('../fonts/NeueHaasDisplay-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: medium;
-  font-display: swap;
-}
+    ::selection {
+        background-color: #333;
+        color: #eee;
+    }
+    @font-face {
+        font-family: "NeueHaas";
+        src: url("../fonts/NeueHaasDisplay-Roman.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "NeueHaas";
+        src: url("../fonts/NeueHaasDisplay-Bold.woff") format("woff");
+        font-weight: bold;
+        font-style: bold;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "NeueHaas";
+        src: url("../fonts/NeueHaasDisplay-Medium.woff") format("woff");
+        font-weight: 500;
+        font-style: medium;
+        font-display: swap;
+    }
 
-body {
-    font-family: "NeueHaas", sans-serif !important;
-}
+    body {
+        font-family: "NeueHaas", sans-serif !important;
+    }
 
     ::-webkit-scrollbar {
         width: 0px;

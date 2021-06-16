@@ -16,6 +16,8 @@ The project is yet in it's initial stages. I'm currently workin on the main webs
 - [x] make a blog
 - [x] fix blog markdown styling
 - [x] dashboard v1
+- [ ] 55 character limit to input dashboard
+- [ ] change delete function to clear function
 - [x] use fonts locally with swap
 - [ ] save days to local storage
 - [ ] implement database
