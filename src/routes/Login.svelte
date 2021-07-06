@@ -23,7 +23,7 @@
 <svelte:head>
 	<title>The Minimalist Journal - Login</title>
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="778317955926-7l1qmv0n5ivat2c1vvpsccsn5oh2v4r9.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="778317955926-8n8ftnvqnetk3fqvvni56pfgf6rehdq7.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </svelte:head>
