@@ -8,6 +8,7 @@
     import Dashboard from "./routes/Dashboard.svelte";
     import Dashboard2 from "./routes/Dashboard2.svelte";
     import Blog from "./routes/Blog.svelte";
+    import Login from "./routes/Login.svelte";
 
     export let url = "";
 </script>
@@ -24,6 +25,7 @@
         <Route path="dashboard2"><Dashboard2 /></Route>
         <Route path="dashboard"><Dashboard /></Route>
         <Route path="blog"><Blog /></Route>
+        <Route path="login"><Login /></Route>
     </div>
 </Router>
 
