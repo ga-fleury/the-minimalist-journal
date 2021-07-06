@@ -1,39 +1,62 @@
 <script>
-    import Header from "../components/headers/Header.svelte";
     import HeaderTop from "../components/headers/HeaderTop.svelte";
     import Footer from "../components/Footer.svelte";
+    import { createEventDispatcher } from "svelte";
+    import { navigate } from "svelte-routing";
 
-    function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
+    const dispatch = createEventDispatcher();
+
+    let imgUsuario;
+    let nomeUsuario;
+
+    export let userLogged;
+
+    window.onSignIn = (googleUser) => {
+        const profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId());
+        console.log("Name: " + profile.getName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
-
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
-      }
 
+        imgUsuario = profile.getImageUrl();
+        nomeUsuario = profile.getName();
+        dispatch('logou', {
+			status_usuario: true,
+            nome_usuario: nomeUsuario
+		});
+        userLogged = true;
+        navigate("/dashboard2", { replace: true });
+    };
 </script>
 
 <svelte:head>
-	<title>The Minimalist Journal - Login</title>
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="778317955926-8n8ftnvqnetk3fqvvni56pfgf6rehdq7.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-
+    <title>The Minimalist Journal - Login</title>
 </svelte:head>
 
 <main>
-    <Header />
-    <HeaderTop />
-    <div class="g-signin2" data-onsuccess="{onSignIn}" data-theme="dark"  data-longtitle="true"></div>
+    <HeaderTop {userLogged} />
+
+    <div class="meio">
+        <div
+            class="g-signin2"
+            data-onsuccess="onSignIn"
+            data-theme="dark"
+            data-longtitle="true"
+        />
+    </div>
     <Footer />
 </main>
 
 <style>
+    .meio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+    }
 </style>

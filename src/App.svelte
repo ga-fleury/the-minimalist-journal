@@ -11,6 +11,21 @@
     import Login from "./routes/Login.svelte";
 
     export let url = "";
+
+    export let userLogged = {
+        status: false,
+        stname: "",
+    };
+
+    function handleLoginHeader(event) {
+        userLogged.status = true;
+        let str = event.detail.nome_usuario;
+        let spaceIndex = str.indexOf(" ");
+        console.log(spaceIndex === -1 ? str : str.substr(0, spaceIndex));
+        return spaceIndex === -1
+            ? (userLogged.stname = str)
+            : (userLogged.stname = str.substr(0, spaceIndex));
+    }
 </script>
 
 <svelte:head>
@@ -20,12 +35,14 @@
 <Tailwind />
 <Router {url}>
     <div>
-        <Route path="how-it-works"><About /></Route>
-        <Route path="/"><Home /></Route>
-        <Route path="dashboard2"><Dashboard2 /></Route>
+        <Route path="how-it-works"><About {userLogged} /></Route>
+        <Route path="/"><Home {userLogged} on:logou={handleLoginHeader} /></Route>
+        <Route path="dashboard2"><Dashboard2 {userLogged} /></Route>
         <Route path="dashboard"><Dashboard /></Route>
         <Route path="blog"><Blog /></Route>
-        <Route path="login"><Login /></Route>
+        <Route path="login"
+            ><Login {userLogged} on:logou={handleLoginHeader} /></Route
+        >
     </div>
 </Router>
 

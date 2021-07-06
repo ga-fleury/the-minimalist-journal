@@ -5,6 +5,8 @@
     import { fade } from "svelte/transition";
     import DayEditOverlay from "../components/overlay/DayEditOverlay.svelte";
 
+    export let userLogged;
+
     const monthNames = [
         "January",
         "February",
@@ -81,8 +83,8 @@
     }
 </script>
 
-<Header />
-<HeaderTop />
+<Header {userLogged} />
+<HeaderTop {userLogged} />
 <h1 class="container mx-auto pt-40 font-bold text-6xl pl-10 2xl:pl-4 mb-4">
     {currentMonth}
 </h1>
